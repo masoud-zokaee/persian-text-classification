@@ -21,4 +21,3 @@ class FileHandler:
                                                     		test_size = test_size, random_state = random_state)
 
 		return x_train, x_test, y_train, y_test
-		

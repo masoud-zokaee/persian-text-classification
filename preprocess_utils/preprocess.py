@@ -1,16 +1,19 @@
 import re
 import demoji
+from pathlib import Path
 from transformers import AutoTokenizer
 from PersianStemmer import PersianStemmer
 
 
 class PreProcess:
 
-	def __init__(self, stopwords_path, tokenizer_path):
+	def __init__(self):
+
+		stopwords_path = Path(__file__).resolve().parent.joinpath("stopwords.txt")
 
 		self.stopwords = self.load_stopwords(file_path=stopwords_path)
 
-		self.tokenizer = self.load_tokenizer(model_path=tokenizer_path)
+		self.tokenizer = self.load_tokenizer(model_path="HooshvareLab/bert-base-parsbert-uncased")
 
 		self.stemmer = self.load_stemmer()
 

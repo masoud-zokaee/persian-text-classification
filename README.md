@@ -4,7 +4,7 @@ Binary text classification on Farsi textual data set ( review, tweet, etc. ).
 
 ## Project description
 
-Using the SVM approach to classify Farsi (Persian) sentences into two classes. implemented python code
+Using the SVM approach to classify Farsi (Persian) sentences into two classes. Implemented python code
 provides an efficient text preprocessing on input data set to achieve a high score on prediction.
 
 Useful libraries for preprocessing task are :
@@ -32,6 +32,5 @@ pip install https://github.com/htaghizadeh/PersianStemmer-Python/archive/master.
 
 ## Files description 
 
-1- SVM.py : project's python file provided with inline code description  
-
-2- stopwords.txt : a text file containing Persian stop words
+SVM.py : project's main python file provided with inline code description,
+including the running point of code using specified parameters.
